@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Виктор Пантелеев](https://up.htmlacademy.ru/adaptive/22/user/1646641).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
