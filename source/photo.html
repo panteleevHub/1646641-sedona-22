@@ -1,143 +1,153 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-  	<meta charset="utf-8">
-  	<title>HTML Academy: Седона</title>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-  	<header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a>Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">HTML academy</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="page-header__logo" href="index.html" aria-label="Главная">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
-      </a>
-      <div class="intro">
-        <img src="img/sedona.svg" width="229" height="39" alt="Седона">
-      </div>
-    </header>
-    <main class="gallery">
-      <h1 class="gallery__title">Фото и видео</h1>
-      <p class="gallery__preview">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      <section class="photo-gallery">
-        <h2 class="visually-hidden">Фотогалерея</h2>
-        <ul class="photo-gallery__list">
-          <li class="photo-gallery__item">
-            <figure class="photo-card">
-              <a href="#" aria-label="Фото &#171;Народные просторы&#187;">
-                <img src="img/road-to-sunset.jpg" width="280" height="280" alt="Дорога в закат">
-              </a>
-              <figcaption class="photo-card__caption">
-                <div class="photo-card__text">
-                  <h3 class="photo-card__title">Народные просторы</h3>
-                  <p class="photo-card__author">Автор фото: Борис</p>
-                </div>
-                <div class="photo-card__likes">
-                  <p class="photo-card__likes-counter">1350</p>
-                </div>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photo-gallery__item">
-            <figure class="photo-card">
-              <a href="#" aria-label="Фото &#171;Местная растительность &#187;">
-                <img src="img/sedona-vegetation.jpg" width="280" height="280" alt="Растительность Седоны">
-              </a>
-              <figcaption class="photo-card__caption">
-                <div class="photo-card__text">
-                  <h3 class="photo-card__title">Местная растительность</h3>
-                  <p class="photo-card__author">Автор фото: Сергей</p>
-                </div>
-                <div class="photo-card__likes">
-                  <p class="photo-card__likes-counter">143</p>
-                </div>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photo-gallery__item">
-            <figure class="photo-card">
-              <a href="#" aria-label="Фото &#171;Дорога на север&#187;">
-                <img src="img/serpentine.jpg" width="280" height="280" alt="Дорожный серпантин">
-              </a>
-              <figcaption class="photo-card__caption">
-                <div class="photo-card__text">
-                  <h3 class="photo-card__title">Дорога на север</h3>
-                  <p class="photo-card__author">Автор фото: Петр</p>
-                </div>
-                <div class="photo-card__likes">
-                  <p class="photo-card__likes-counter">96</p>
-                </div>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photo-gallery__item">
-            <figure class="photo-card">
-              <a href="#" aria-label="Фото &#171;Мост Дьявола&#187;">
-                <img src="img/devil's-bridge.jpg" alt="Мост Дьявола">
-              </a>
-              <figcaption class="photo-card__caption">
-                <div class="photo-card__text">
-                  <h3 class="photo-card__title">Мост Дьявола</h3>
-                  <p class="photo-card__author">Автор фото: Антон</p>
-                </div>
-                <div class="photo-card__likes">
-                  <p class="photo-card__likes-counter">254</p>
-                </div>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
-      <div class="gallery-outro">
-        <p class="gallery-outro__caption">Все еще сомневаетесь?</p>
-        <p class="gallery-outro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="video-player">
-          <div class="video-player__screen">
-            <img src="img/video-mobile.jpg" width="320" height="201" alt="Горная дорога">
-            <div class="video-player__load-bar"></div>
-          </div>
-          <div class="video-player__controls">
-            <button class="video-player__button video-player__button--reload" type="button" aria-label="Начать заново"></button>
-            <button class="video-player__button video-player__button--subtitles" type="button" aria-label="Субтитры"></button>
-            <button class="video-player__button video-player__button--full-sceen" type="button" aria-label="Перейти в полноэкранный режим"></button>
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" target="_blank">HTML academy</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="page-header__logo" href="index.html" aria-label="Главная">
+          <img class="image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+        </a>
+        <section class="intro intro--inner">
+          <h2 class="visually-hidden">Введение</h2>
+          <img class="image intro__image" src="img/sedona.svg" width="229" height="39" alt="Седона">
+        </section>
+      </header>
+      <main class="page-main">
+        <h1 class="page-main__title">Фото и видео</h1>
+        <p class="page-main__preview">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <section class="gallery">
+          <h2 class="visually-hidden">Фотогалерея</h2>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <figure class="photo-card">
+                <a href="#" aria-label="Фото &#171;Народные просторы&#187;">
+                  <img class="image photo-card__photo" src="img/road-to-sunset.jpg" width="280" height="280" alt="Дорога в закат">
+                </a>
+                <figcaption class="photo-card__caption">
+                  <div class="photo-card__text">
+                    <h3 class="photo-card__title">Народные просторы</h3>
+                    <p class="photo-card__author">Автор фото: Борис</p>
+                  </div>
+                  <div class="photo-card__likes">
+                    <button class="photo-card__like" type="button"></button>
+                    <p class="photo-card__likes-counter">1350</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="photo-card">
+                <a href="#" aria-label="Фото &#171;Местная растительность&#187;">
+                  <img class="image photo-card__photo" src="img/sedona-vegetation.jpg" width="280" height="280" alt="Растительность Седоны">
+                </a>
+                <figcaption class="photo-card__caption">
+                  <div class="photo-card__text">
+                    <h3 class="photo-card__title">Местная растительность</h3>
+                    <p class="photo-card__author">Автор фото: Сергей</p>
+                  </div>
+                  <div class="photo-card__likes">
+                    <button class="photo-card__like" type="button"></button>
+                    <p class="photo-card__likes-counter">143</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="photo-card">
+                <a href="#" aria-label="Фото &#171;Дорога на север&#187;">
+                  <img class="image photo-card__photo" src="img/serpentine.jpg" width="280" height="280" alt="Дорожный серпантин">
+                </a>
+                <figcaption class="photo-card__caption">
+                  <div class="photo-card__text">
+                    <h3 class="photo-card__title">Дорога на север</h3>
+                    <p class="photo-card__author">Автор фото: Петр</p>
+                  </div>
+                  <div class="photo-card__likes">
+                    <button class="photo-card__like" type="button"></button>
+                    <p class="photo-card__likes-counter">96</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="photo-card">
+                <a href="#" aria-label="Фото &#171;Мост Дьявола&#187;">
+                  <img class="image photo-card__photo " src="img/devil's-bridge.jpg" alt="Мост Дьявола">
+                </a>
+                <figcaption class="photo-card__caption">
+                  <div class="photo-card__text">
+                    <h3 class="photo-card__title">Мост Дьявола</h3>
+                    <p class="photo-card__author">Автор фото: Антон</p>
+                  </div>
+                  <div class="photo-card__likes">
+                    <button class="photo-card__like" type="button"></button>
+                    <p class="photo-card__likes-counter">254</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <div class="gallery-outro">
+          <p class="gallery-outro__caption">Все еще сомневаетесь?</p>
+          <p class="gallery-outro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="video-player">
+            <div class="video-player__screen">
+              <img class="image" src="img/video-mobile.jpg" width="320" height="201" alt="Горная дорога">
+              <div class="video-player__load"></div>
+            </div>
+            <div class="video-player__controls">
+              <button class="video-player__button video-player__button--reload" type="button" aria-label="Начать заново"></button>
+              <button class="video-player__button video-player__button--subtitles" type="button" aria-label="Субтитры"></button>
+              <button class="video-player__button video-player__button--full-screen" type="button" aria-label="Перейти в полноэкранный режим"></button>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__social social">
-        <p class="social__hashtag">#visitsedona</p>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Мы в твиттере"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#" aria-label="Мы в фейсбуке"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--you-tube" href="#" aria-label="Мы в ютубе"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="
-          Логотип htmlacademy">
-        </a>
-      </div>
-    </footer>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__socials socials">
+          <p class="socials__hashtag">#visitsedona</p>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--twitter" href="#" target="_blank" aria-label="Мы в твиттере"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="#" target="_blank" aria-label="Мы в фейсбуке"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--you-tube" href="#" target="_blank" aria-label="Мы в ютубе"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <img class="image" src="img/htmlacademy.svg" width="27" height="34" alt="
+            Логотип htmlacademy">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
