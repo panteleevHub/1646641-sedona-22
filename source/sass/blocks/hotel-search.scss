@@ -1,0 +1,29 @@
+.hotel-search {
+  padding: 0 20px;
+  padding-top: 22px;
+  padding-bottom: 49px;
+}
+
+.hotel-search__caption {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hotel-search__description {
+  width: 262px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.hotel-search__button {
+  max-width: 280px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+}

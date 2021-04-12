@@ -1,0 +1,21 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  background-color: $light-blue;
+}
+
+.main-nav__link {
+  display: block;
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+}

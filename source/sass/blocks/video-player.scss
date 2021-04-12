@@ -1,0 +1,32 @@
+.video-player__load {
+  width: 280px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: rgba($black, 0.6);
+}
+
+.video-player__controls {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 23px 24px;
+  background-color: $bright-gray;
+}
+
+.video-player__button--reload {
+  width: 16px;
+  height: 20px;
+  margin-right: 133px;
+}
+
+.video-player__button--subtitles {
+  width: 32px;
+  height: 20px;
+  margin-right: 31px;
+}
+
+.video-player__button--full-screen {
+  width: 20px;
+  height: 20px;
+}

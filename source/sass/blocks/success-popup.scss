@@ -1,0 +1,35 @@
+.success-popup {
+  width: 320px;
+  padding-top: 38px;
+}
+
+.success-popup__caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0 20px;
+}
+
+.success-popup__description {
+  width: 245px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+
+.success-popup__background {
+  background-color: $bright-gray;
+  padding: 20px;
+}
+
+.success-popup__button {
+  width: 280px;
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
