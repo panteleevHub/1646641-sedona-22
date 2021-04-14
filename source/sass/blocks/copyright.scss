@@ -1,0 +1,14 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  line-height: 26px;
+  color: $black;
+  margin: 0;
+  margin-right: 13px;
+  text-align: center;
+}

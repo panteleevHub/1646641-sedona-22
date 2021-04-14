@@ -1,0 +1,29 @@
+.failure-popup {
+  width: 320px;
+  padding: 40px 42px 35px;
+}
+
+.failure-popup__caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.failure-popup__description {
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.failure-popup__button {
+  width: 180px;
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  margin: 0 auto;
+}

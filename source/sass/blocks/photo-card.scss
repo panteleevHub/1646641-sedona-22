@@ -1,0 +1,40 @@
+.photo-card {
+  margin: 0;
+}
+
+.photo-card__photo {
+  margin-bottom: 10px;
+}
+
+.photo-card__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+  margin: 0;
+}
+
+.photo-card__author {
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.photo-card__likes {
+  display: flex;
+}
+
+.photo-card__like {
+  width: 23px;
+  height: 21px;
+}
+
+.photo-card__likes-counter {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+  margin: 0;
+  padding-left: 14px;
+}
