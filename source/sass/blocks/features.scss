@@ -3,6 +3,19 @@
   padding-left: 70px;
   padding-right: 40px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    padding-top: 55px;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
 }
 
 .features__item {
@@ -10,6 +23,37 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 35px;
+    padding-top: 103px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.features__item--souvenirs {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.features__item--food {
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -20,9 +64,27 @@
   color: $black;
   margin: 0;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
 }
 
 .features__description {
   line-height: 21px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.features__description-break {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

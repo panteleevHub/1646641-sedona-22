@@ -2,8 +2,24 @@
   padding: 0 40px;
   padding-top: 39px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 59px;
+    padding-bottom: 31px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .page-footer__socials {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
