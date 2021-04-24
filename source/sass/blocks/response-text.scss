@@ -1,6 +1,19 @@
 .response-text {
+  padding: 0 20px;
   padding-top: 36px;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 480px;
+    margin: 0 auto;
+    padding-top: 62px;
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 112px;
+    padding-bottom: 59px;
+  }
 }
 
 .response-text__caption {
@@ -11,6 +24,11 @@
   margin: 0;
   margin-bottom: 28px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
 }
 
 .response-text__description {

@@ -1,6 +1,11 @@
 .failure-popup {
   width: 320px;
   padding: 40px 42px 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    padding: 52px 47px 49px;
+  }
 }
 
 .failure-popup__caption {
@@ -11,6 +16,14 @@
   text-align: center;
   margin: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .failure-popup__description {
@@ -18,6 +31,10 @@
   text-align: center;
   margin: 0;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .failure-popup__button {
@@ -26,4 +43,9 @@
   padding-top: 18px;
   padding-bottom: 14px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+    font-size: 21px;
+  }
 }
