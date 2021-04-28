@@ -4,17 +4,46 @@
   background-color: rgba($light-blue, 0.6);
   padding-top: 90px;
   padding-bottom: 85px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/rocks-tablet.jpg");
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/rocks-desktop.jpg");
+    padding-top: 78px;
+    padding-bottom: 90px;
+  }
 }
 
 .intro--inner {
   background-image: url("../../img/rocks-inner-page.jpg");
+  background-position: 0 -56px;
+  padding-top: 52px;
+  padding-bottom: 67px;
 
-  .intro__image {
-    max-width: 229px;
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 117px;
+    background-image: url("../../img/rocks-tablet.jpg");
+    background-position: 0 -228px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+    padding-bottom: 120px;
+    background-image: url("../../img/rocks-desktop.jpg");
+    background-position: 0 -217px;
   }
 }
 
 .intro__image {
   max-width: 282px;
   margin: 0 auto;
+}
+
+.intro__image--inner {
+  max-width: 229px;
 }

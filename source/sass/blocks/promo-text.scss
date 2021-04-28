@@ -2,8 +2,19 @@
   width: 285px;
   margin: 0 auto;
   padding: 0 15px;
-  padding-top: 38px;
+  padding-top: 33px;
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 520px;
+    padding-top: 44px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 43px;
+  }
 }
 
 .promo-text__title {
@@ -14,6 +25,10 @@
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .promo-text__subtitle {

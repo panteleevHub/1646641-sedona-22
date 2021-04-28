@@ -1,3 +1,10 @@
+.socials {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .socials__hashtag {
   font-size: 21px;
   font-weight: bold;
@@ -6,12 +13,21 @@
   margin: 0;
   margin-bottom: 33px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 270px;
+  }
 }
 
 .socials__list {
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
+  width: 152px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -31,5 +47,6 @@
 
 .socials__link {
   display: block;
+  height: 100%;
   background-color: $light-blue;
 }

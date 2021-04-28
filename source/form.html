@@ -2,26 +2,27 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <div class="wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--main">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--photo">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--form">
               <a class="main-nav__link">Форма отзыва</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#" target="_blank">HTML academy</a>
+            <li class="main-nav__item main-nav__item--academy">
+              <a class="main-nav__link main-nav__link--academy" href="#" target="_blank">HTML academy</a>
             </li>
           </ul>
         </nav>
@@ -30,7 +31,7 @@
         </a>
         <section class="intro intro--inner">
           <h2 class="visually-hidden">Введение</h2>
-          <img class="image intro__image" src="img/sedona.svg" width="229" height="39" alt="Седона">
+          <img class="image intro__image intro__image--inner" src="img/sedona.svg" width="229" height="39" alt="Седона">
         </section>
       </header>
       <main class="page-main">
@@ -41,7 +42,7 @@
         </div>
         <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="feedback__fieldset feedback__fieldset--name">
-            <legend class="feedback__fieldset-title">Представьтесь:</legend>
+            <legend class="feedback__fieldset-title feedback__fieldset-title--name">Представьтесь:</legend>
             <ul class="feedback__initials-list">
               <li class="feedback__initials-item">
                 <label class="feedback__initials-label" for="feedback-name">Имя*:</label>
@@ -58,9 +59,9 @@
             </ul>
           </fieldset>
           <fieldset class="feedback__fieldset feedback__fieldset--contacts">
-            <legend class="feedback__fieldset-title">Контактная информация:</legend>
+            <legend class="feedback__fieldset-title feedback__fieldset-title--contacts">Контактная информация:</legend>
             <div class="feedback__contacts feedback__contacts--phone">
-              <label class="feedback__contacts-label" for="feedback-phone">Контактный телефон*:</label>
+              <label class="feedback__contacts-label feedback__contacts-label--phone" for="feedback-phone"><span class="feedback__contacts-span">Контактный </span>телефон*:</label>
               <input class="feedback__contacts-input" type="tel" name="phone" id="feedback-phone" placeholder="Введите телефон" required>
             </div>
             <div class="feedback__contacts feedback__contacts--email">
@@ -69,7 +70,7 @@
             </div>
           </fieldset>
           <fieldset class="feedback__fieldset feedback__fieldset--impressions">
-            <legend class="feedback__fieldset-title">Ваше общее впечатление:</legend>
+            <legend class="feedback__fieldset-title feedback__fieldset-title--impressions">Ваше общее впечатление:</legend>
             <ul class="feedback__impressions">
               <li class="feedback__impression">
                 <input class="visually-hidden" type="radio" name="impression" value="positive" id="positive-impression" checked>
@@ -86,7 +87,7 @@
             </ul>
           </fieldset>
           <fieldset class="feedback__fieldset feedback__fieldset--attractions">
-            <legend class="feedback__fieldset-title">Посещенные достопримечательности:</legend>
+            <legend class="feedback__fieldset-title feedback__fieldset-title--attractions">Посещенные достопримечательности:</legend>
             <ul class="feedback__attractions">
               <li class="feedback__attraction">
                 <input class="visually-hidden" type="checkbox" name="devil-bridge" id="attraction-devil-bridge" checked>
@@ -107,10 +108,11 @@
             </ul>
           </fieldset>
           <fieldset class="feedback__fieldset feedback__fieldset--comment">
-            <legend class="feedback__fieldset-title">Опишите свои эмоции:</legend>
+            <legend class="feedback__fieldset-title feedback__fieldset-title--comment">Опишите свои эмоции:</legend>
             <textarea class="feedback__comment" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback__submit button" type="submit">Отправить отзыв</button>
+          <p class="feedback__footnote">* — обязательные поля</p>
         </form>
       </main>
       <footer class="page-footer">

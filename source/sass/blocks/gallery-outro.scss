@@ -1,6 +1,18 @@
 .gallery-outro {
-  padding-top: 32px;
+  padding-top: 34px;
   padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+    padding-top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    padding-top: 63px;
+    padding-bottom: 85px;
+  }
 }
 
 .gallery-outro__caption {
@@ -12,6 +24,11 @@
   margin-bottom: 28px;
   padding: 0 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
 }
 
 .gallery-outro__description {
@@ -20,4 +37,9 @@
   margin-bottom: 33px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    margin-bottom: 80px;
+  }
 }

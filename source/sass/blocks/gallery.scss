@@ -1,15 +1,45 @@
 .gallery {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .gallery__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .gallery__item {
-  padding-top: 23px;
-  padding-bottom: 16px;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.gallery__item--expanse {
+  padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    padding-top: 0;
+  }
 }
