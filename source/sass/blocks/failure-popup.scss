@@ -1,6 +1,7 @@
 .failure-popup {
   width: 320px;
   padding: 40px 42px 35px;
+  box-shadow: 0px 7px 15px rgba($blackish, 0.15);
 
   @media (min-width: $tablet-width) {
     width: 400px;
@@ -43,6 +44,17 @@
   padding-top: 18px;
   padding-bottom: 14px;
   margin: 0 auto;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $cerulean-blue;
+  }
+
+  &:active {
+    background-color: $dark-cerulean;
+    color: rgba($white, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 272px;
