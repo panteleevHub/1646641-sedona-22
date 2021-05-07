@@ -4,10 +4,37 @@
 
 .main-nav__toggle {
   position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 5;
+  width: 22px;
+  height: 22px;
+  background-color: inherit;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle--opened {
+  background-image: url("../../img/close-cross.svg");
+}
+
+.main-nav__toggle--closed {
+  width: 23px;
+  background-image: url("../../img/hamburger-button.svg");
 }
 
 .main-nav__list {
@@ -27,6 +54,7 @@
 }
 
 .main-nav__item {
+  position: relative;
   background-color: $light-blue;
   border-bottom: 1px solid rgba($vivid-black, 0.2);
   box-shadow: inset 0 1px 0 rgba($white, 0.2);
@@ -43,6 +71,17 @@
     background-color: $white;
     border-bottom: none;
     box-shadow: none;
+  }
+}
+
+.main-nav__item:last-child::after {
+  @media (max-width: $mobile-only) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(180deg, rgba($black, 0) 0%, rgba($black, 0.2) 100%);
   }
 }
 
@@ -72,6 +111,20 @@
   }
 }
 
+.main-nav__item--active .main-nav__link {
+  @media (min-width: $tablet-width) {
+    color: $purple-brown;
+
+    &:hover {
+      color: $purple-brown;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
 .main-nav__link {
   display: block;
   color: $white;
@@ -83,11 +136,30 @@
   padding-bottom: 5px;
   text-align: center;
 
+  @media (max-width: $mobile-only) {
+    &:hover {
+      background-color: $cerulean-blue;
+    }
+
+    &:active {
+      background-color: $dark-cerulean;
+      color: rgba($white, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     color: $black;
     font-size: 14px;
     line-height: 26px;
     padding: 16px 25px 14px;
+
+    &:hover {
+      color: $light-blue;
+    }
+
+    &:active {
+      color: rgba($black, 0.3);
+    }
   }
 }
 
@@ -98,5 +170,18 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 4px;
+  }
+}
+
+.main-nav__logo {
+  position: absolute;
+  width: 102px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
   }
 }

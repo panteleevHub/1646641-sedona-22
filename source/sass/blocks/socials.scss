@@ -1,5 +1,6 @@
 .socials {
   @media (min-width: $tablet-width) {
+    flex-grow: 1;
     display: flex;
     align-items: center;
   }
@@ -16,18 +17,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    margin-right: 112px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 270px;
   }
 }
 
 .socials__list {
   display: flex;
   flex-wrap: wrap;
-  width: 152px;
+  width: 150px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -48,5 +44,26 @@
 .socials__link {
   display: block;
   height: 100%;
+  position: relative;
   background-color: $light-blue;
+
+  .socials__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background-color: $cerulean-blue;
+  }
+
+  &:active {
+    background-color: $dark-cerulean;
+  }
+
+  &:active .socials__svg {
+    opacity: 0.3;
+  }
 }
+

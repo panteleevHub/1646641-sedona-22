@@ -1,12 +1,12 @@
 .hotel-search {
+  max-width: 458px;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 33px;
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    width: 458px;
     padding: 56px 0;
-    margin: 0 auto;
   }
 }
 
@@ -26,7 +26,7 @@
 }
 
 .hotel-search__description {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   line-height: 24px;
   text-align: center;
 
@@ -51,4 +51,14 @@
   width: 100%;
   padding-top: 15px;
   padding-bottom: 17px;
+
+  &:hover,
+  &:focus {
+    background-color: $cerulean-blue;
+  }
+
+  &:active {
+    background-color: $dark-cerulean;
+    color: rgba($white, 0.3);
+  }
 }
