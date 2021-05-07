@@ -1,19 +1,68 @@
 .video-player {
   position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+  }
 }
 
 .video-player__load {
+  position: absolute;
+  bottom: 66px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 280px;
   height: 45px;
   margin: 0 auto;
   background-color: rgba($black, 0.6);
 
   @media (min-width: $tablet-width) {
+    bottom: 0;
     width: 100%;
     height: 93px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  }
+}
+
+.video-player__load-bar {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+  width: 235px;
+  height: 3px;
+  background-color: $white;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    left: 93px;
+    width: 389px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
+}
+
+.video-player__load-toggle {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 58px;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  background-color: $white;
+  border: none;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 206px;
   }
 }
 
@@ -39,6 +88,10 @@
 }
 
 .video-player__button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     background-color: inherit;
   }
@@ -47,7 +100,7 @@
 .video-player__button--reload {
   width: 16px;
   height: 20px;
-  margin-right: 133px;
+  margin-right: 134px;
 
   @media (min-width: $tablet-width) {
     margin-right: 473px;
@@ -61,10 +114,39 @@
 .video-player__button--subtitles {
   width: 32px;
   height: 20px;
-  margin-right: 31px;
+  margin-right: 32px;
 }
 
-.video-player__button--full-screen {
+.video-player__button--fullscreen {
   width: 20px;
   height: 20px;
+}
+
+.video-player__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &:hover path {
+    fill: $light-black;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video-player__svg path {
+    fill: $white;
+  }
+
+  .video-player__svg:hover path {
+    fill: $white;
+    opacity: 0.6;
+  }
+
+  .video-player__svg:active path {
+    opacity: 0.3;
+  }
 }

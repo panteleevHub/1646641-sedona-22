@@ -9,7 +9,7 @@
 .photo-card__caption {
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 15px 20px;
@@ -77,8 +77,25 @@
 }
 
 .photo-card__like {
+  position: relative;
   width: 23px;
   height: 21px;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+
+.photo-card__like-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.photo-card__like-svg path {
+  @media (min-width: $desktop-width) {
+    fill: $white;
+    opacity: 1;
+  }
 }
 
 .photo-card__likes-counter {
@@ -91,6 +108,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 9px;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {

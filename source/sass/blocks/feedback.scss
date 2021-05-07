@@ -1,26 +1,40 @@
 .feedback {
-  width: 280px;
+  max-width: 520px;
   margin: 0 auto;
+  padding: 0 20px;
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    width: 648px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto-fill, auto);
+    max-width: 960px;
+    padding: 0 60px;
     padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    padding: 0;
     padding-bottom: 66px;
   }
 }
 
 .feedback__fieldset {
+  position: relative;
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.feedback__fieldset:not(:last-of-type)::after {
+  @media (max-width: $mobile-only) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $very-light-gray;
+  }
 }
 
 .feedback__fieldset--name {
@@ -54,11 +68,23 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
-    padding-bottom: 86px;
+    padding-bottom: 85px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 84px;
+  }
+}
+
+.feedback__impressions::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: -96px;
+    right: 0;
+    width: 1px;
+    height: 292px;
+    background-color: $very-light-gray;
   }
 }
 
@@ -68,14 +94,10 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     padding-bottom: 22px;
-    padding-left: 97px;
-    padding-right: 92px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 53px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -84,7 +106,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
   }
 }
 
@@ -116,11 +138,38 @@
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 19px;
+    margin-bottom: 21px;
+    position: relative;
+    display: flex;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 72px;
+  }
+}
+
+.feedback__fieldset-title--contacts::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: $very-light-gray;
+    margin-top: 10px;
+    margin-right: 61px;
+    flex-grow: 1;
+  }
+}
+
+.feedback__fieldset-title--contacts::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: $very-light-gray;
+    margin-top: 10px;
+    margin-left: 61px;
+    flex-grow: 1;
   }
 }
 
@@ -142,13 +191,37 @@
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    width: 310px;
+    width: 100%;
     padding-top: 0;
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 58px;
+  }
+}
+
+.feedback__fieldset-title--attractions::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: $very-light-gray;
+    margin-right: 65px;
+    flex-grow: 1;
+  }
+}
+
+.feedback__fieldset-title--attractions::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: $very-light-gray;
+    margin-left: 65px;
+    flex-grow: 1;
   }
 }
 
@@ -157,10 +230,37 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 54px;
+  }
+}
+
+.feedback__fieldset-title--comment::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: $very-light-gray;
+    margin-right: 75px;
+    margin-bottom: 7px;
+    flex-grow: 1;
+  }
+}
+
+.feedback__fieldset-title--comment::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: $very-light-gray;
+    margin-left: 75px;
+    margin-bottom: 7px;
+    flex-grow: 1;
   }
 }
 
@@ -198,10 +298,13 @@
   width: 58px;
   height: 58px;
   background-color: $vivid-gray;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .feedback__contacts--phone {
   margin-bottom: 14px;
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
@@ -214,6 +317,7 @@
 
 .feedback__contacts--phone::after {
   top: 34px;
+  background-image: url("../../img/phone.svg");
 
   @media (min-width: $desktop-width) {
     top: 0;
@@ -222,6 +326,7 @@
 
 .feedback__contacts--email::after {
   top: 31px;
+  background-image: url("../../img/mail.svg");
 
   @media (min-width: $desktop-width) {
     top: 0;
@@ -231,6 +336,7 @@
 .feedback__initials-label,
 .feedback__contacts-label {
   line-height: 26px;
+  cursor: pointer;
 }
 
 .feedback__initials-label {
@@ -278,6 +384,17 @@
   padding-bottom: 14px;
   border: none;
   outline: none;
+
+  &:hover {
+    background-color: $very-light-gray;
+  }
+
+  &:focus,
+  &:active {
+    background-color: inherit;
+    outline: 4px solid $very-light-gray;
+    outline-offset: -4px;
+  }
 }
 
 .feedback__initials-input {
@@ -309,7 +426,7 @@
 
 .feedback__impression {
   margin-bottom: 43px;
-  padding-left: 78px;
+  padding-left: 28%;
 
   &:last-child {
     margin-bottom: 0;
@@ -334,18 +451,22 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 58px;
+    padding-left: 97px;
+    padding-right: 95px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     column-gap: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .feedback__attraction {
   margin-bottom: 54px;
-  padding-left: 78px;
+  padding-left: 28%;
 
   &:last-child {
     margin-bottom: 0;
@@ -354,6 +475,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 62px;
+    padding-left: 39%;
   }
 
   @media (min-width: $desktop-width) {
@@ -366,11 +488,99 @@
 .feedback__impressions-label,
 .feedback__attractions-label {
   display: block;
+  position: relative;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   color: $black;
   text-transform: none;
+  cursor: pointer;
+}
+
+.feedback__impressions-input + label::before {
+  content: "";
+  position: absolute;
+  left: -78px;
+  top: -15px;
+  width: 55px;
+  height: 55px;
+  background-color: $bright-gray;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -75px;
+    top: -17px;
+  }
+}
+
+.feedback__impressions-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -61px;
+  top: 1px;
+  width: 21px;
+  height: 21px;
+  background-color: $light-black;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -58px;
+    top: 0;
+  }
+}
+
+.feedback__attractions-input + label::before {
+  content: "";
+  position: absolute;
+  left: -78px;
+  top: -15px;
+  width: 55px;
+  height: 55px;
+  background-color: $bright-gray;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    left: -80px;
+    top: -17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -15px;
+    border-radius: 0;
+  }
+}
+
+.feedback__attractions-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -62px;
+  top: 5px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../../img/tick.svg");
+
+  @media (min-width: $tablet-width) {
+    left: -63px;
+    top: 3px;
+  }
+}
+
+
+.feedback__impressions-input:hover + label::before,
+.feedback__attractions-input:hover + label::before,
+.feedback__impressions-input:focus + label::before,
+.feedback__attractions-input:focus + label::before {
+  background-color: $very-light-gray;
+}
+
+.feedback__impressions-input:active + label::before,
+.feedback__attractions-input:active + label::before {
+  background-color: $cloudy-gray;
+}
+
+.feedback__impressions-input:active + label::after,
+.feedback__attractions-input:active + label::after {
+  opacity: 0.3;
 }
 
 .feedback__comment {
@@ -397,6 +607,17 @@
     color: $black;
   }
 
+  &:hover {
+    background-color: $very-light-gray;
+  }
+
+  &:focus,
+  &:active {
+    background-color: inherit;
+    outline: 4px solid $very-light-gray;
+    outline-offset: -4px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 18px;
   }
@@ -406,6 +627,17 @@
   width: 100%;
   padding-top: 18px;
   padding-bottom: 14px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $cerulean-blue;
+  }
+
+  &:active {
+    background-color: $dark-cerulean;
+    color: rgba($white, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 324px;

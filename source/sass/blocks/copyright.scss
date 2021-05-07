@@ -12,3 +12,16 @@
   margin-right: 13px;
   text-align: center;
 }
+
+.copyright__link:hover {
+  .copyright__svg path {
+    fill: $light-blue;
+  }
+}
+
+.copyright__link:active {
+  .copyright__svg path {
+    fill: $black;
+    opacity: 0.3;
+  }
+}
