@@ -26,13 +26,20 @@
             </li>
           </ul>
           <a class="main-nav__logo" href="index.html" aria-label="Главная">
-            <img class="image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img class="image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+            </picture>
           </a>
         </nav>
         <div class="page-header__menu-bar"></div>
         <section class="intro intro--inner">
           <h2 class="visually-hidden">Введение</h2>
-          <img class="image intro__image intro__image--inner" src="img/sedona.svg" width="229" height="39" alt="Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+            <img class="image intro__image intro__image--inner" src="img/sedona.svg" width="229" height="39" alt="Седона">
+          </picture>
         </section>
       </header>
       <main>
@@ -47,7 +54,11 @@
             <li class="gallery__item gallery__item--expanse">
               <figure class="photo-card">
                 <a href="#" aria-label="Фото &#171;Народные просторы&#187;">
-                  <img class="image photo-card__photo" src="img/road-to-sunset.jpg" width="280" height="280" alt="Дорога в закат">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/road-to-sunset-desktop.jpg 1x, img/road-to-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/road-to-sunset-tablet.jpg 1x, img/road-to-sunset-tablet@2x.jpg 2x">
+                    <img class="image photo-card__photo photo-card__photo--road" src="img/road-to-sunset.jpg" srcset="img/road-to-sunset@2x.jpg 2x" width="280" height="280" alt="Дорога в закат">
+                  </picture>
                 </a>
                 <figcaption class="photo-card__caption photo-card__caption--expanse">
                   <div class="photo-card__text">
@@ -68,7 +79,11 @@
             <li class="gallery__item">
               <figure class="photo-card">
                 <a href="#" aria-label="Фото &#171;Местная растительность&#187;">
-                  <img class="image photo-card__photo" src="img/sedona-vegetation.jpg" width="280" height="280" alt="Растительность Седоны">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/sedona-vegetation-desktop.jpg 1x, img/sedona-vegetation-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/sedona-vegetation-tablet.jpg 1x, img/sedona-vegetation-tablet@2x.jpg 2x">
+                    <img class="image photo-card__photo" src="img/sedona-vegetation.jpg" srcset="img/sedona-vegetation@2x.jpg 2x" width="280" height="280" alt="Растительность Седоны">
+                  </picture>
                 </a>
                 <figcaption class="photo-card__caption">
                   <div class="photo-card__text">
@@ -89,7 +104,11 @@
             <li class="gallery__item">
               <figure class="photo-card">
                 <a href="#" aria-label="Фото &#171;Дорога на север&#187;">
-                  <img class="image photo-card__photo" src="img/serpentine.jpg" width="280" height="280" alt="Дорожный серпантин">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/serpentine-desktop.jpg 1x, img/serpentine-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/serpentine-tablet.jpg 1x, img/serpentine-tablet@2x.jpg 2x">
+                    <img class="image photo-card__photo" src="img/serpentine.jpg" srcset="img/serpentine@2x.jpg 2x" width="280" height="280" alt="Дорожный серпантин">
+                  </picture>
                 </a>
                 <figcaption class="photo-card__caption photo-card__caption--road">
                   <div class="photo-card__text">
@@ -110,7 +129,11 @@
             <li class="gallery__item">
               <figure class="photo-card">
                 <a href="#" aria-label="Фото &#171;Мост Дьявола&#187;">
-                  <img class="image photo-card__photo " src="img/devil's-bridge.jpg" alt="Мост Дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/devil's-bridge-desktop.jpg 1x, img/sedona-vegetation-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/devil's-bridge-tablet.jpg 1x, img/devil's-bridge-tablet@2x.jpg 2x">
+                    <img class="image photo-card__photo" src="img/devil's-bridge.jpg" srcset="img/devil's-bridge@2x.jpg 2x" alt="Мост Дьявола">
+                  </picture>
                 </a>
                 <figcaption class="photo-card__caption">
                   <div class="photo-card__text">
@@ -134,7 +157,11 @@
           <p class="gallery-outro__caption">Все еще сомневаетесь?</p>
           <p class="gallery-outro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video-player">
-            <img class="image" src="img/video-mobile.jpg" width="320" height="201" alt="Горная дорога">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="image video-player__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Горная дорога">
+            </picture>
             <div class="video-player__load">
               <div class="video-player__load-bar"></div>
               <div class="video-player__load-toggle"></div>
