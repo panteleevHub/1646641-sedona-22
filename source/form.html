@@ -26,13 +26,20 @@
             </li>
           </ul>
           <a class="main-nav__logo" href="index.html" aria-label="Главная">
-            <img class="image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img class="image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+            </picture>
           </a>
         </nav>
         <div class="page-header__menu-bar"></div>
         <section class="intro intro--inner">
           <h2 class="visually-hidden">Введение</h2>
-          <img class="image intro__image intro__image--inner" src="img/sedona.svg" width="229" height="39" alt="Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+            <img class="image intro__image intro__image--inner" src="img/sedona.svg" width="229" height="39" alt="Седона">
+          </picture>
         </section>
       </header>
       <main>

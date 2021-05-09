@@ -184,4 +184,15 @@
   @media (min-width: $tablet-width) {
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+  }
+}
+
+.main-nav__logo .image {
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+  }
 }
