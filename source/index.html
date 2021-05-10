@@ -26,13 +26,17 @@
             </li>
           </ul>
           <a class="main-nav__logo">
-            <img class="image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img class="image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+            </picture>
           </a>
         </nav>
         <div class="page-header__menu-bar"></div>
         <section class="intro">
           <h2 class="visually-hidden">Введение</h2>
-          <img class="image intro__image" src="img/text-intro.svg" width="282" height="214" alt>
+            <img class="image intro__image" src="img/text-intro.svg" width="282" height="214" alt="Добро пожаловать в Седону">
         </section>
       </header>
       <main>
@@ -51,7 +55,11 @@
                 <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="advantages__photo advantages__photo--city">
-                <img class="image" src="img/photo-city.jpg" width="320" height="260" alt="Отель в Седоне">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                  <img class="image" src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x" width="320" height="260" alt="Отель в Седоне">
+                </picture>
               </div>
               <ul class="features">
                 <li class="features__item features__item--housing">
@@ -75,7 +83,11 @@
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="advantages__photo">
-                <img class="image" src="img/photo-bridge.jpg" width="320" height="260" alt="Мост дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="image" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
+                </picture>
               </div>
             </li>
             <li class="advantages__item advantages__item--gray-bg advantages__item--area">
