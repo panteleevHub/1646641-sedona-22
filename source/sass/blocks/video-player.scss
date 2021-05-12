@@ -137,27 +137,26 @@
   position: absolute;
   top: 0;
   left: 0;
+  fill: $dark-grayish-blue;
 
-  &:hover path {
+  &:hover {
     fill: $light-black;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .video-player__svg path {
+  @media (min-width: $tablet-width) {
     fill: $white;
-  }
 
-  .video-player__svg:hover path {
-    fill: $white;
-    opacity: 0.6;
-  }
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
 
-  .video-player__svg:active path {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

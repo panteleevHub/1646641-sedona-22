@@ -47,13 +47,6 @@
   position: relative;
   background-color: $light-blue;
 
-  .socials__svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   &:hover {
     background-color: $cerulean-blue;
   }
@@ -62,7 +55,15 @@
     background-color: $dark-cerulean;
   }
 
-  &:active .socials__svg {
+  &:active .socials__icon {
     opacity: 0.3;
   }
+}
+
+.socials__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $white;
 }
