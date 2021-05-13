@@ -14,13 +14,13 @@
 }
 
 .copyright__link:hover {
-  .copyright__svg path {
+  .copyright__logo-htmlacademy {
     fill: $light-blue;
   }
 }
 
 .copyright__link:active {
-  .copyright__svg path {
+  .copyright__logo-htmlacademy {
     fill: $black;
     opacity: 0.3;
   }
