@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
   </head>
-  <body class="page-body">
+  <body class="page-body no-js">
     <div class="wrapper">
       <header class="page-header">
         <nav class="page-header__nav main-nav">
@@ -22,7 +27,7 @@
               <a class="main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item main-nav__item--academy">
-              <a class="main-nav__link main-nav__link--academy" href="#" target="_blank">HTML academy</a>
+              <a class="main-nav__link main-nav__link--academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML academy</a>
             </li>
           </ul>
           <a class="main-nav__logo" href="index.html" aria-label="Главная">
@@ -154,7 +159,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg class="copyright__logo-htmlacademy" width="27" height="35">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>

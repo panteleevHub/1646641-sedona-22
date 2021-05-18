@@ -7,6 +7,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 56px 0;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
   }
 }
 
@@ -49,8 +54,7 @@
 
 .hotel-search__button {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding: 15px 20px 17px;
 
   &:hover,
   &:focus {

@@ -103,10 +103,30 @@
   border: none;
   cursor: pointer;
 
+  &:hover .video-player__svg,
+  &:focus .video-player__svg {
+    fill: $light-black;
+  }
+
+  &:active .video-player__svg {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: inherit;
+
+    &:hover .video-player__svg,
+    &:focus .video-player__svg {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active .video-player__svg {
+      opacity: 0.3;
+    }
   }
 }
+
 
 .video-player__button--reload {
   width: 16px;
@@ -139,24 +159,7 @@
   left: 0;
   fill: $dark-grayish-blue;
 
-  &:hover {
-    fill: $light-black;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     fill: $white;
-
-    &:hover {
-      fill: $white;
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }

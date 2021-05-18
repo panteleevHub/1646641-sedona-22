@@ -156,9 +156,17 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 150px;
+    width: 155px;
     font-size: 21px;
     margin-bottom: 14px;
+  }
+}
+
+.advantages__title-break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
