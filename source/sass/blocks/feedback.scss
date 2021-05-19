@@ -311,11 +311,11 @@
 }
 
 .feedback__contacts--phone::after {
-  background-image: url("../../img/phone.svg");
+  background-image: url("../img/phone.svg");
 }
 
 .feedback__contacts--email::after {
-  background-image: url("../../img/mail.svg");
+  background-image: url("../img/mail.svg");
 }
 
 .feedback__initials-label,
@@ -537,7 +537,7 @@
   top: 19px;
   width: 23px;
   height: 16px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
 
   @media (min-width: $tablet-width) {
     left: -63px;
