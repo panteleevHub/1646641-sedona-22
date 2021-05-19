@@ -6,6 +6,7 @@
 }
 
 .copyright__text {
+  max-width: 150px;
   line-height: 26px;
   color: $black;
   margin: 0;
@@ -13,7 +14,8 @@
   text-align: center;
 }
 
-.copyright__link:hover {
+.copyright__link:hover,
+.copyright__link:focus {
   .copyright__logo-htmlacademy {
     fill: $light-blue;
   }

@@ -4,25 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
   </head>
-  <body class="page-body">
+  <body class="page-body no-js">
     <div class="wrapper">
       <header class="page-header">
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--main main-nav__item--active">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--photo">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item main-nav__item--form">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="main-nav__item main-nav__item--academy">
-              <a class="main-nav__link main-nav__link--academy" href="#" target="_blank">HTML academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML academy</a>
             </li>
           </ul>
           <a class="main-nav__logo">
@@ -81,7 +86,7 @@
             </li>
             <li class="advantages__item advantages__item--bridge">
               <div class="advantages__info advantages__info--bridge">
-                <h3 class="advantages__title">Там есть мост дьявола</h3>
+                <h3 class="advantages__title">Там есть&nbsp;<br class="advantages__title-break">мост дьявола</h3>
                 <p class="advantages__number">№2</p>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
@@ -121,6 +126,16 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта Седоны">
+          </picture>
+          <div class="map__marker"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676324.341040543!2d-112.91574455283201!3d34.8544438156372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1620915066358!5m2!1sru!2sby" allowfullscreen=""></iframe>
         </section>
       </main>
       <footer class="page-footer">
@@ -154,7 +169,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg class="copyright__logo-htmlacademy" width="27" height="35">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>

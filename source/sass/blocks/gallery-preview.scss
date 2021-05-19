@@ -1,7 +1,5 @@
 .gallery-preview {
   position: relative;
-  max-width: 480px;
-  margin: 0 auto;
   padding: 0 20px;
   padding-top: 32px;
   padding-bottom: 33px;
@@ -45,6 +43,7 @@
 }
 
 .gallery-preview__description {
+  max-width: 520px;
   margin: 0 auto;
   line-height: 24px;
   text-align: center;
