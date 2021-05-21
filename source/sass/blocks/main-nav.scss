@@ -39,6 +39,7 @@
 }
 
 .main-nav__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -47,6 +48,12 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
+  }
+}
+
+.main-nav__list--opened {
+  @media (max-width: $mobile-only) {
+    display: block;
   }
 }
 

@@ -2,4 +2,12 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .main-nav__list {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
 }
