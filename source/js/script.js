@@ -4,7 +4,7 @@ const navList = document.querySelector(".main-nav__list");
 
 body.classList.remove("no-js");
 
-navToggle.addEventListener("click", function (evt) {
+navToggle.addEventListener("click", function () {
   if (navToggle.classList.contains("main-nav__toggle--closed")) {
     navList.classList.add("main-nav__list--opened");
     navToggle.classList.remove("main-nav__toggle--closed");
