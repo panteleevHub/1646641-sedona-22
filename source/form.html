@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
   </head>
-  <body class="page-body no-js">
+  <body class="page-body page-body--form no-js">
     <div class="wrapper">
       <header class="page-header">
         <nav class="page-header__nav main-nav">
@@ -53,17 +53,17 @@
           <p class="response-text__caption">Оставьте свой отзыв</p>
           <p class="response-text__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
-        <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
+        <form class="feedback" method="post" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="feedback__fieldset feedback__fieldset--name">
             <legend class="feedback__fieldset-title feedback__fieldset-title--name">Представьтесь:</legend>
             <ul class="feedback__initials-list">
               <li class="feedback__initials-item">
                 <label class="feedback__initials-label" for="feedback-name">Имя*:</label>
-                <input class="feedback__initials-input" type="text" name="name" id="feedback-name" placeholder="Петр" required>
+                <input class="feedback__initials-input feedback__initials-input--name" type="text" name="name" id="feedback-name" placeholder="Петр">
               </li>
               <li class="feedback__initials-item">
                 <label class="feedback__initials-label" for="feedback-surname">Фамилия*:</label>
-                <input class="feedback__initials-input" type="text" name="surname" id="feedback-surname" placeholder="Иванов" required>
+                <input class="feedback__initials-input feedback__initials-input--surname" type="text" name="surname" id="feedback-surname" placeholder="Иванов">
               </li>
               <li class="feedback__initials-item">
                 <label class="feedback__initials-label" for="feedback-patronymic">Отчество:</label>
@@ -75,11 +75,11 @@
             <legend class="feedback__fieldset-title feedback__fieldset-title--contacts">Контактная информация:</legend>
             <div class="feedback__contacts feedback__contacts--phone">
               <label class="feedback__contacts-label feedback__contacts-label--phone" for="feedback-phone"><span class="feedback__contacts-span">Контактный </span>телефон*:</label>
-              <input class="feedback__contacts-input" type="tel" name="phone" id="feedback-phone" placeholder="Введите телефон" required>
+              <input class="feedback__contacts-input feedback__contacts-input--phone" type="tel" name="phone" id="feedback-phone" placeholder="Введите телефон">
             </div>
             <div class="feedback__contacts feedback__contacts--email">
               <label class="feedback__contacts-label" for="feedback-email">Электронная почта*:</label>
-              <input class="feedback__contacts-input" type="email" name="email" id="feedback-email" placeholder="Введите e-mail" required>
+              <input class="feedback__contacts-input feedback__contacts-input--email" type="email" name="email" id="feedback-email" placeholder="Введите e-mail">
             </div>
           </fieldset>
           <fieldset class="feedback__fieldset feedback__fieldset--impressions">
@@ -165,12 +165,12 @@
         </div>
       </footer>
     </div>
-    <div class="failure-popup">
+    <div class="failure-popup popup">
       <p class="failure-popup__caption">Что-то пошло не так!</p>
       <p class="failure-popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="failure-popup__button button" type="button">Ок</button>
     </div>
-    <div class="success-popup">
+    <div class="success-popup popup">
       <p class="success-popup__caption">Ваш отзыв отправлен!</p>
       <p class="success-popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
       <div class="success-popup__background">
